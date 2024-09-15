@@ -1,0 +1,1052 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+:root {
+    --primary-color: #3253e5;
+    --secondary-color: #d9f8e0;
+    --third-color: #ff8c00;
+    --dark-secondary-color: #baffb6;
+    --dark-color: #0f0c19;
+    --light-color: #f4f4f4;
+    --danger-color: #dc3545;
+    --success-color: #28a745;
+    --chat-window: #232848;
+    --focus-color: #dbff6c;
+}
+
+/* HomePage Styles */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gabarito', sans-serif;
+    box-sizing: content-box;
+    /* overflow: hidden; */
+}
+
+main {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.ai-logo {
+    font-family: cursive;
+    font-size: 1.95rem !important;
+    color: var(--focus-color);
+}
+
+.left {
+    padding: 20px;
+    width: 46%;
+    background-color: var(--secondary-color);
+    color: var(--third-color);
+}
+
+.left label {
+    font-size: 2.3rem;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.home-fit-icon{
+  font-size: 4rem;
+  color: black;
+  rotate: -50deg;
+}
+
+.left .greet {
+    margin-top: 2.5rem;
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: darkgreen;
+}
+
+.right {
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.right-page{
+    display: flex;
+}
+
+.right p {
+    margin: 10px;
+}
+
+.right h1{
+    text-align: center;
+    font-size: 3rem;
+}
+
+button {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    border: 0px;
+    border-radius: 5px;
+    padding: 10px 100px;
+    font-size: 1.2rem;
+}
+
+button a {
+    color: var(--light-color);
+    text-decoration: none;
+}
+
+button:hover{
+  background-color: var(--third-color);
+  color: var(--dark-color);
+}
+
+.right .btn .btn-link {
+    padding-right: 10px;
+}
+
+.dash-img-male{
+    mix-blend-mode: multiply;
+    position: relative;
+    top: 60px;
+    left: -20px;
+    width: 746px;
+    opacity: 100%;
+}
+
+.goals{
+    margin: 50px;
+}
+
+.goals h1{
+    text-align: center;
+    font-size: 3rem;
+}
+
+.goals p{
+    text-align: center;
+    padding: 0px 150px;
+    margin-bottom: 70px;
+    font-size: 1.5rem;
+}
+.goals-section-img{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.goals-section-img div h2{
+    text-align: center;
+}
+
+.goals-section-img{
+    margin-bottom: 30px;
+}
+
+.motivation{
+    display: flex;
+    margin: 150px;
+}
+
+.motivation-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.motivation .motivation-text div h1{
+    font-size: 2.5rem;    
+}
+
+.motivation .motivation-text div p{
+    margin-right: 50px;
+    padding-right: 180px;
+    font-size: 1.5rem;
+}
+
+.motivation .motivation-img img{
+    width: 400px;
+}
+/* Homepage style ends */
+
+.flex-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100vh;
+}
+
+.flex-box h1 {
+    font-size: 2.8rem;
+    color: var(--dark-color);
+}
+
+.flex-box input[type=email],
+input[type=text],
+input[type=password],
+input[type=number] {
+    font-size: 1rem !important;
+    padding: 10px 100px !important;
+    padding-left: 10px !important;
+}
+
+.flex-box .btn {
+    padding: 10px 125px;
+}
+
+/* Navbar  */
+
+.flex-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar {
+    background-color: var(--dark-secondary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    padding: 7px 0px;
+    top: 0;
+    opacity: 0.9;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar a {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    text-decoration: none;
+    padding: 0.45rem;
+    margin: 0 0.1rem;
+}
+
+.navbar a:hover {
+    color: var(--primary-color);
+}
+
+.navbar ul {
+    width: 40%;
+    list-style: none;
+}
+
+.navbar .welcome span {
+    margin-right: 0.6rem;
+}
+
+.dashboard-content {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.bot-icon {
+    width: 100%;
+}
+
+/* Sidebar */
+
+.side-bar {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    width: 360px;
+    transition: all 0.3s ease-in;
+}
+
+.align {
+    display: flex;
+    gap: 10px;
+    font-size: 1.4rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.chat-window,
+.user-details,
+.curr-user-info {
+    background-color: var(--chat-window);
+    color: var(--light-color);
+    width: 100%;
+}
+
+.spinner-user-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    background-color: var(--chat-window);
+    color: var(--light-color);
+    width: 100%;
+}
+
+.spinner-user-info .spinner {
+    width: 70px;
+    height: 70px;
+}
+
+.no-of-chats {
+    height: 250px;
+}
+
+.user-info-active {
+    background-color: #343540;
+    color: var(--focus-color);
+}
+
+.user-info-link {
+    transition: background-color 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.user-info {
+    padding: 20px;
+    font-size: 1.1rem;
+}
+
+.user-info p {
+    margin: 0px 0px 2px 0px;
+    font-size: 1.3rem;
+    padding: 10px;
+    border-radius: 7px;
+}
+
+.user-info p:hover {
+    background-color: #343540;
+}
+
+.user-info a {
+    color: var(--light-color);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.user-info a p {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+
+}
+
+
+/* Home */
+
+.side-bar{
+    width: 17% !important;
+    overflow-x: hidden;
+}
+
+.dash-home{
+    width: 83%;
+    height: 100%;
+    overflow-x: scroll;
+}
+
+.dash-home .sec-1{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    background-color: black;
+    color: white;
+}
+
+.dash-home .sec-2 div p span{
+    color: yellow;
+}
+
+.dash-home .sec-1 p{
+    margin-top: 200px;
+    margin-left: 154px;
+    font-size: 4rem;
+}
+
+.dash-home button{
+    margin: 0px 178px;
+}
+
+.dash-home .sec-1 img{
+    width: 40%;
+    height: 500px;
+    margin-right: 72px;
+    margin-top: 80px;
+}
+
+.dash-home .sec-2 h1{
+    text-align: center;
+    font-size: 4rem;
+}
+
+.dash-home .sec-2 .div-2{
+    display: flex;
+    gap: 30px;
+}
+
+.dash-home .sec-2 .div-2 div{
+    margin-top: 40px;
+}
+.dash-home .sec-2 div img{
+    margin-left: 72px;
+    width: 400px;
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+
+.dash-home .sec-2 div p{
+    font-size: 1.5rem !important;
+    padding: 0px !important;
+}
+
+.dash-home .sec-3{
+    background-color:black;
+    color: white;
+    padding: 60px 0px;
+
+}
+
+.dash-home .sec-3 h1{
+    text-align: center;
+    font-size: 3rem;
+}
+
+.dash-home .sec-3 div{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.dash-home .sec-3 div img{
+    width: 200px;
+    height: 200px;
+}
+
+.dash-home .sec-4 .cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    justify-content: center;
+}
+
+.dash-home .sec-4{
+    padding: 60px 0px;
+    margin-bottom: 80px;
+}
+
+.dash-home .sec-4 h1{
+    font-size: 3rem ;
+    text-align: center;
+}
+
+
+.dash-home .sec-4 .card{
+    width: 30%;
+    color: yellow;
+    background-color: black;
+    padding-bottom: 40px;
+
+}
+
+.dash-home .sec-4 .card div{
+    text-align: center;
+}
+
+.dash-home .sec-4 .cards .card-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.feedback{
+    overflow-x: scroll;
+}
+
+/* User Details Form */
+
+.user-info-form {
+    font-size: 1.4rem;
+    padding: 40px;
+    padding-top: 25px;
+}
+
+.user-info-form fieldset legend {
+    color: orange;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.user-details,
+.curr-user-info {
+    /* padding: 40px; */
+    overflow-y: scroll;
+}
+
+.chat-window {
+    padding: 0px 40px 40px 20px;
+}
+
+.user-details fieldset {
+    margin-bottom: 30px;
+}
+
+.foot{
+    text-align: center;
+    padding: 20px;
+    background-color: #121826;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.foot p{
+    font-size: 1.2rem;
+    opacity: 0.5;
+}
+
+/* .user-details .user-info-form [type=text],
+#email,
+input[type=number],
+input[type=date],
+.chat-form input {
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 10px;
+} */
+
+.user-details input[type=radio] {
+    font-size: 1rem;
+}
+
+.user-details input:focus,
+.chat-form input {
+    outline: none;
+}
+
+.personal-info>div,
+.contact>div,
+.name>div,
+.location>div,
+.edu>div,
+.skill-section>div,
+.career>div {
+    margin-bottom: 20px;
+}
+
+
+.fname,
+.lname,
+.email,
+.number,
+.current-city,
+.preferred-location,
+.date-of-birth,
+.gender,
+.level,
+.field-of-study,
+.year,
+.skills,
+.hobbies,
+.role,
+.job-type,
+.salary {
+    display: flex;
+    gap: 70px;
+}
+
+.fname label,
+.lname label,
+.email label,
+.number label,
+.current-city label,
+.preferred-location label,
+.date-of-birth label,
+.level label,
+.field-of-study label,
+.year label,
+.skills label,
+.hobbies label,
+.role label,
+.job-type label,
+.salary label {
+    width: 20%;
+}
+
+.fname input,
+.lname input,
+.email input,
+.number input,
+.current-city input,
+.preferred-location input,
+.date-of-birth input,
+.level input,
+.field-of-study input,
+.year input,
+.skills input,
+.hobbies input,
+.role input,
+.job-type input,
+.salary input {
+    width: 60%;
+}
+
+.gender-section {
+    margin-left: 146px;
+}
+
+.gender-type {
+    display: flex;
+    gap: 20px;
+}
+
+.user-details button {
+    margin-right: 20px;
+}
+
+/* chatWindow */
+
+.chat-window-navbar ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+}
+
+.chat-window-navbar ul {
+    padding-left: 0px;
+    margin-top: 30px;
+}
+
+.chat-window-navbar ul li {
+    font-size: 1.6rem;
+}
+
+.chats {
+    height: 550px;
+    margin: 10px 100px 0px 100px;
+    padding: 20px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.no-chats {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+.no-chats svg {
+    font-size: 50px;
+    height: 70px;
+    width: 70px;
+}
+
+.chat-form {
+    display: flex;
+    justify-content: center;
+}
+
+.chats div {
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    font-size: 1.3rem;
+}
+
+.chat-form input {
+    width: 60%;
+}
+
+.user {
+    background-color: #67697b !important;
+
+}
+
+.chatbot {
+    background-color: #1c1d22 !important;
+    width: 908px;
+}
+
+.jobs-response div:nth-child(even) {
+    color: black;
+    background-color: #baffb6;
+    border-radius: 10px;
+}
+
+.jobs-response div:nth-child(odd) {
+    background-color: #121826;
+    color: white;
+    border-radius: 10px;
+}
+
+
+.jobs-response {
+    display: flex;
+    /* flex-wrap: wrap; */
+    overflow-x: scroll;
+}
+
+.jobs {
+    margin: 10px;
+    /* Add margin if needed */
+    height: 390px;
+    padding: 20px;
+    /* Add padding if needed */
+    width: 370px;
+    /* Set a maximum fixed width for each job entry */
+    box-sizing: border-box;
+    /* Include padding and border in the width */
+}
+
+/* Other styles for the job entry content */
+.jobs p {
+    margin: 10px
+}
+
+/* Spinner */
+
+.spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    border-top: 4px solid #3498db;
+    /* Set the color of the spinner */
+    width: 30px;
+    height: 30px;
+    animation: spin 1s linear infinite;
+    /* Configure the animation duration and type */
+    margin: 0 auto;
+}
+
+.recommendedData {
+    flex-wrap: wrap !important;
+    margin-top: 60px;
+}
+
+.window-scroll {
+    overflow-y: scroll;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Add this CSS in your stylesheet */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--dark-color);
+    /* Color of the scrollbar thumb */
+    border-radius: 6px;
+    /* Rounded corners of the scrollbar thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--chat-window);
+    /* Color of the scrollbar thumb on hover */
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--chat-window);
+    /* Color of the scrollbar track */
+}
+
+::-webkit-scrollbar-track:hover {
+    background-color: var(--chat-window);
+    /* Color of the scrollbar track on hover */
+}
+
+
+.curr-user-info {
+    display: flex;
+    box-sizing: border-box;
+}
+
+.user-details-info{
+    border: 5px solid orange;
+    margin: 20px;
+}
+
+.user-details-flex{
+    display: flex;
+    padding-left: 60px;
+    width: 70%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.user-box-container{
+    border-top: 5px solid orange;
+
+}
+
+/* .user-box-container div{
+    border: 2px solid orange;
+}
+
+.user-box-container div p:first-child{
+    border-right: 2px solid orange;
+} */
+
+.user-box-container div p{
+    font-size: 1.6rem;
+}
+
+
+.user-details-flex div p{
+    text-align: start;
+}
+
+.user-photo {
+    display: flex;
+    justify-content: center;
+    font-size: 200px;
+}
+
+.user-details p {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.user-details .user-box-container div {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.user-details .user-box-container div p {
+    font-size: 20px;
+    display: flex;
+    width: 340px;
+}
+
+.user-box-container {
+    width: 100%;
+}
+
+/* newcss */
+.resources-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.resources-container h2 {
+    font-size: 35px;
+    color: yellow;
+    margin-left: 13px;
+    margin-top: 15px;
+}
+
+.section {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.section:last-child {
+    margin-right: 0;
+}
+
+.section h2 {
+    margin-bottom: 10px;
+}
+
+.section>div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.section .item {
+    margin-right: 30px;
+    margin-bottom: 10px;
+    width: 350px;
+    height: 350px;
+}
+
+.section .item:last-child {
+    margin-right: 0;
+}
+
+.section .item a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.section .item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.section .item p {
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.nav-log-user {
+
+    display: flex;
+    width: 31%;
+    justify-content: space-around;
+}
+
+.nav-log-user li:hover,
+.user-info a:hover {
+    color: var(--focus-color);
+}
+
+.nav-log-user li:first-child {
+    display: flex;
+    align-items: center;
+    width: 112px;
+    justify-content: space-around;
+}
+
+.recommend-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
+
+.recommend-btn:hover {
+    color: var(--dark-secondary-color);
+}
+
+/* About Page */
+
+.scroll-window{
+    overflow-y: scroll;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 12px;
+}
+
+.about-project-college{
+    font-size: 1.3rem;
+}
+
+.about-project p{
+    font-size: 1.3rem;
+    text-align: start;
+}
+
+.about-project h2{
+    color: orange;
+    font-size: 1.9rem;
+}
+
+.member-name p, .guide p{
+    font-size: 1.5rem;
+}
+
+.team-row,
+.guide-row {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.team {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.member img,
+.guide img {
+    width: 200px;
+    /* Set fixed width for the images */
+    height: 200px;
+    /* Set fixed height for the images */
+    border-radius: 50%;
+    /* Making the image round */
+    object-fit: cover;
+    /* Ensure images maintain aspect ratio and cover their containers */
+}
+
+
+/* ------------------ */
+
+.explore-window h1{
+    background-color: white;
+    color: orange;
+}
+
+.explore-window .x-chat img{
+    width: 300px;
+    height: 300px;
+}
+
+/*  */
+
+.company-logo {
+    max-width: 100%;
+    max-height: 100%;
+    width: 500px;
+    height: 500px;
+    display: flex;
+}
+
+.logo-container {
+    width: 100%; /* Adjust this width as needed */
+    height: 120px; /* Adjust this height as needed */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.jobs-response a{
+    text-decoration: none;
+}
+
+.apply-btn{
+    margin-bottom: 8px;
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
