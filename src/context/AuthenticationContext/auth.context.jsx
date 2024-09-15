@@ -26,7 +26,6 @@ export const AuthProvider = ({ children }) => {
         setCurrentUserName({name});
         try {
             const res = await axios.post('http://localhost:8181/user/sign-up', body, config)
-            // localStorage.setItem('token', res.data.token);
             setAuthenticated(true)
         }
         catch (err) {
@@ -51,19 +50,43 @@ export const AuthProvider = ({ children }) => {
 
 
         setCurrentUser({ email, password });
-        try {
-            const res = await axios.post('http://localhost:8181/user/login', body, config);
-            setCurrentUserName(res.data.objectData.name)
-            setCurrentUser(res.data.objectData);
-            console.log(res.data)
-            setAuthenticated(true)
-            return res.data;
+try {
+    const res = await axios.post('http://localhost:8181/user/login', body, config);
+
+    // If login is successful (statusCode 200 and no error)
+    if (res.data.statusCode === 200 && !res.data.error) {
+        const userData = res.data.objectData;
+        setCurrentUserName(userData.name);
+        setCurrentUser(userData);
+        console.log("Login successful:", res.data);
+        setAuthenticated(true);
+        return res.data;
+    } else {
+        // Handle unexpected success response
+        throw new Error("Unexpected response from server");
+    }
+} catch (err) {
+    if (err.response) {
+        // Handle specific status codes returned by the API
+        if (err.response.status === 404) {
+            console.log("User not registered");
+            alert("User not registered. Please sign up first.");
+        } else if (err.response.status === 401) {
+            console.log("Invalid credentials");
+            alert("Invalid credentials. Please try again.");
+        } else {
+            console.log("Error:", err.response.message);
+            alert("An error occurred: " + err.response.message);
         }
-        catch (err) {
-            console.log(err);
-            console.log(err.response.data.errors[0].message)
-            return err.response.data.errors[0].message
-        }
+    } else {
+        // Handle network or unexpected errors
+        console.log("Error:", err.message);
+        alert("invalid email or password");
+    }
+    return err;
+}
+
+        
 
     }
 

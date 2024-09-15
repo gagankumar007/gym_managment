@@ -39,11 +39,13 @@ export default function SideBar() {
 
         <Link to='feedback' > <p className={`user-info-link ${activeLink === 'feeback' ? 'user-info-active' : ''}`} onClick={() => handleActive('job-data')}><AiOutlineForm /> Feedback Form</p></Link>
 
-        <Link to='userprofile' ><p className={`user-info-link ${activeLink === 'userprofile' ? 'user-info-active' : ''}`} onClick={() => handleActive('user')}> <FaUser /> {currentUserName}</p></Link>
+        <Link to='userprofile' ><p className={`user-info-link ${activeLink === 'userprofile' ? 'user-info-active' : ''}`} onClick={() => handleActive('user')}> <FaUser /> Account</p></Link>
 
         <Link to='contact' > <p className={`user-info-link ${activeLink === 'contact' ? 'user-info-active' : ''}`} onClick={() => handleActive('contact')}><MdConnectWithoutContact /> Contact Us</p></Link>
 
         <Link to='pricing' > <p className={`user-info-link ${activeLink === 'pricing' ? 'user-info-active' : ''}`} onClick={() => handleActive('pricing')}><MdGroups /> Pricing</p></Link>
+
+        <Link to='admin' > <p className={`user-info-link ${activeLink === 'admin' ? 'user-info-active' : ''}`} onClick={() => handleActive('admin')}><MdGroups /> Admin Login</p></Link>
 
         <Link to='/' ><p className={`user-info-link ${activeLink === 'current-user' ? 'user-info-active' : ''}`} onClick={handleLogout}> <IoIosLogOut /> Logout</p></Link>
       </div>
